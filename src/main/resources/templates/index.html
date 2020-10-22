@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>SpringBoot SSE</title>
+<link rel="stylesheet"
+	th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" />
+</head>
+
+<body>
+	<div class="container">
+		<div class="card">
+			<div class="card-header bg-danger" style="color: white;">Live Stock
+				Prices </div>
+			<div class="card-body">
+				<table class="table table-sm table-striped">
+					<thead>
+						<tr>
+							<th>Company</th>
+							<th>Price</th>
+							<th>Change</th>
+							<th>Value</th>
+						</tr>
+					</thead>
+					<tbody>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+	<script type="text/javascript"
+		th:src="@{/webjars/jquery/jquery.min.js}"></script>
+	<script type="text/javascript"
+		th:src="@{/webjars/bootstrap/js/bootstrap.min.js}"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+</body>
+
+</html>
